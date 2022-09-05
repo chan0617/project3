@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Tamil&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  @include mq("small-screen-1") {
+    text-align: center;
+  }
+  @include mq("small-screen-2") {
+    text-align: center;
+  }
+  @include mq("small-screen-3") {
+    margin: 0 40px;
+    padding-left: 0;
+  }
+}

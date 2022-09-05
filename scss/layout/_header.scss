@@ -1,0 +1,97 @@
+header {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  .logo-text {
+    position: absolute;
+    left: 7rem;
+    top: 8rem;
+    z-index: 1000;
+    animation: moveInLeft 1.5s ease-in-out;
+    // a {
+    //   position: fixed;
+    // }
+    img {
+      @include mq("small-screen-1") {
+        width: 80%;
+      }
+      @include mq("small-screen-2") {
+        width: 70%;
+      }
+      @include mq("small-screen-3") {
+        width: 60%;
+      }
+    }
+  }
+  #brandVisual {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    &-visual_slide li a {
+      display: block;
+      text-indent: -9999999999px;
+    }
+  }
+  .visual_slide {
+    width: 100%;
+    height: 100%;
+    li {
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    }
+    .visual {
+      &_0 {
+        background-image: url(../images/slide_img1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &_1 {
+        background-image: url(../images/slide_img2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &_2 {
+        background-image: url(../images/slide_img3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  .buttonList {
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    > li {
+      background: url("../images/btnVisual.png") no-repeat 0 -16px;
+      width: 16px;
+      height: 18px;
+      overflow: hidden;
+      position: relative;
+      top: -100px;
+      left: 50%;
+      float: left;
+      margin: 0 8px;
+      cursor: pointer;
+    }
+    .on {
+      background-position: 0 0;
+    }
+  }
+  .hidden {
+    display: block;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -999999px;
+  }
+}
