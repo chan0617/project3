@@ -29,7 +29,7 @@
 
   &-bg {
     background-color: $color-primary;
-    width: 4rem;
+    width: 7rem;
     height: 3rem;
     position: fixed;
     z-index: 1000;
@@ -151,7 +151,7 @@
   position: relative;
   .scroll-bt {
     right: 9rem;
-    top: 78rem;
+    top: 80rem;
     animation: motion 0.5s linear 0s infinite alternate;
     cursor: pointer;
     z-index: 9;

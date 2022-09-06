@@ -67,7 +67,7 @@ main {
 }
 
 .more-btn {
-  margin-top: -0.5rem;
+  margin-top: 10rem;
   .txt {
     display: inline-block;
     position: relative;
@@ -128,7 +128,7 @@ main {
     margin: 5px 0;
   }
   @include mq("small-screen-3") {
-    width: 30%;
+    width: 45%;
     margin: 5px 0;
   }
 }
@@ -147,7 +147,7 @@ main {
     margin: 5px 0;
   }
   @include mq("small-screen-3") {
-    width: 30%;
+    width: 45%;
     margin: 5px 0;
   }
 }

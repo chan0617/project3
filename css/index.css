@@ -201,7 +201,7 @@ dd {
 }
 .nav-bg {
   background-color: #5c1b8c;
-  width: 4rem;
+  width: 7rem;
   height: 3rem;
   position: fixed;
   z-index: 1000;
@@ -322,7 +322,7 @@ dd {
 }
 .mouse-btn .scroll-bt {
   right: 9rem;
-  top: 78rem;
+  top: 80rem;
   -webkit-animation: motion 0.5s linear 0s infinite alternate;
           animation: motion 0.5s linear 0s infinite alternate;
   cursor: pointer;
@@ -537,7 +537,7 @@ main .section-about-words .about-title {
 }
 
 .more-btn {
-  margin-top: -0.5rem;
+  margin-top: 10rem;
 }
 .more-btn .txt {
   display: inline-block;
@@ -605,7 +605,7 @@ main .section-about-words .about-title {
 }
 @media screen and (max-width: 700px) {
   .swiper-button-next {
-    width: 30%;
+    width: 45%;
     margin: 5px 0;
   }
 }
@@ -630,7 +630,7 @@ main .section-about-words .about-title {
 }
 @media screen and (max-width: 700px) {
   .swiper-button-prev {
-    width: 30%;
+    width: 45%;
     margin: 5px 0;
   }
 }
@@ -702,12 +702,12 @@ footer .logo-text-footer {
 }
 @media screen and (min-width: 701px) and (max-width: 899px) {
   footer .logo-text-footer {
-    width: 30%;
+    width: 40%;
   }
 }
 @media screen and (max-width: 700px) {
   footer .logo-text-footer {
-    width: 30%;
+    width: 50%;
   }
 }
 footer .copyright {

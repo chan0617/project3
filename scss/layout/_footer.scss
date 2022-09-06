@@ -20,7 +20,6 @@ footer {
     width: 50%;
     opacity: 0.8;
   }
-
   .span-hidden {
     display: inline-block;
     text-indent: -99999px;
@@ -37,10 +36,10 @@ footer {
       width: 50%;
     }
     @include mq("small-screen-2") {
-      width: 30%;
+      width: 40%;
     }
     @include mq("small-screen-3") {
-      width: 30%;
+      width: 50%;
     }
   }
   .copyright {
