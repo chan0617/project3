@@ -1,7 +1,6 @@
 footer {
   color: $color-grey-light;
-  background-color: #000;
-  padding: 9rem 7rem 3rem 7rem;
+  padding: 6rem 7rem 3rem 7rem;
   @include mq("small-screen-1") {
     padding: 1rem 7rem 3rem 7rem;
   }
@@ -19,6 +18,7 @@ footer {
     filter: invert(100%);
     width: 50%;
     opacity: 0.8;
+    cursor: pointer;
   }
   .span-hidden {
     display: inline-block;
@@ -41,6 +41,9 @@ footer {
     @include mq("small-screen-3") {
       width: 50%;
     }
+    @include mq("small-screen-4") {
+      // width: 90%;
+    }
   }
   .copyright {
     font-size: 1.2rem;
@@ -55,6 +58,7 @@ footer {
       margin: 3rem;
       word-break: break-all;
       display: inline-block;
+      font-family: "Nanum Gothic";
     }
   }
 }

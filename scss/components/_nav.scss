@@ -25,8 +25,12 @@
       left: 80%;
       width: 7rem;
     }
+    @include mq("small-screen-4") {
+      left: 74%;
+      width: 5rem;
+      top: 6rem;
+    }
   }
-
   &-bg {
     background-color: $color-primary;
     width: 7rem;
@@ -58,6 +62,7 @@
   &-icon {
     position: relative;
     margin-top: 4rem;
+
     &::before {
       top: -0.8rem;
     }
@@ -78,6 +83,9 @@
       height: 2px;
       background: #333;
       display: inline-block;
+      @include mq("small-screen-4") {
+        width: 2rem;
+      }
     }
   }
   &-button:hover &-icon:before {
@@ -151,21 +159,24 @@
   position: relative;
   .scroll-bt {
     right: 9rem;
-    top: 80rem;
+    top: 75rem;
     animation: motion 0.5s linear 0s infinite alternate;
     cursor: pointer;
     z-index: 9;
     display: inline-block;
-    font-size: 13px;
-    font-weight: bold;
     text-align: center;
-    color: $color-white;
-    background: url("../images/mouse_cursor.png") no-repeat center/99%;
+    background: url("../images/mouse_cursor.png") no-repeat center/35%;
+    filter: invert(100%);
     position: fixed;
-    margin-left: -53px;
     padding-bottom: 75px;
     opacity: 0.8;
-
+    span {
+      font-size: 1.4rem;
+      font-weight: bold;
+      position: relative;
+      bottom: 18px;
+      font-family: "Tiro Tamil", serif;
+    }
     @keyframes motion {
       0% {
         margin-top: 0px;

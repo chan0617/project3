@@ -13,6 +13,9 @@ header {
     // a {
     //   position: fixed;
     // }
+    @include mq("small-screen-4") {
+      left: 3rem;
+    }
     img {
       @include mq("small-screen-1") {
         width: 80%;
@@ -22,6 +25,9 @@ header {
       }
       @include mq("small-screen-3") {
         width: 60%;
+      }
+      @include mq("small-screen-4") {
+        width: 50%;
       }
     }
   }
@@ -48,17 +54,23 @@ header {
     }
     .visual {
       &_0 {
-        background-image: url(../images/slide_img1.jpg);
+        background-image: url(../images/slide_img1.jpg),
+          linear-gradient(to right, #5c1b8c 15%, #654ea3 49%);
+        background-blend-mode: hard-light;
         background-position: center;
         background-repeat: no-repeat;
       }
       &_1 {
-        background-image: url(../images/slide_img2.jpg);
+        background-image: url(../images/slide_img2.jpg),
+          linear-gradient(to right, #5c1b8c 15%, #654ea3 49%);
+        background-blend-mode: hard-light;
         background-position: center;
         background-repeat: no-repeat;
       }
       &_2 {
-        background-image: url(../images/slide_img3.jpg);
+        background-image: url(../images/slide_img3.jpg),
+          linear-gradient(to right, #5c1b8c 15%, #654ea3 49%);
+        background-blend-mode: hard-light;
         background-position: center;
         background-repeat: no-repeat;
       }
@@ -81,6 +93,9 @@ header {
       float: left;
       margin: 0 8px;
       cursor: pointer;
+      @include mq("small-screen-4") {
+        left: 39%;
+      }
     }
     .on {
       background-position: 0 0;

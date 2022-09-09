@@ -1,14 +1,15 @@
 main {
   @include clearfix();
   .section-about {
-    background-color: #000;
     padding: 7rem 6.5rem 6rem;
     min-height: 42rem;
     width: 100%;
     float: left;
 
+    @include mq("small-screen-4") {
+      padding: 2rem 2.5rem 1rem;
+    }
     img {
-      width: 77%;
       @include mq("small-screen-1") {
         width: 100%;
       }
@@ -52,22 +53,32 @@ main {
       margin-bottom: 2rem;
       line-height: 1;
       color: $color-white;
+      @include mq("small-screen-4") {
+        font-size: 3rem;
+      }
     }
     span {
       font-size: 1.8rem;
       margin-left: 20px;
     }
     .about-title {
-      color: $color-white;
-      font-weight: bold;
-      margin-bottom: 35px;
+      background: linear-gradient(
+        0deg,
+        rgba(92, 27, 140, 1) 0%,
+        rgba(242, 233, 243, 1) 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 1.4rem 0;
       font-size: 1.8rem;
+      font-weight: 900;
     }
   }
 }
 
 .more-btn {
-  margin-top: 10rem;
+  margin-top: 2rem;
   .txt {
     display: inline-block;
     position: relative;
@@ -137,7 +148,6 @@ main {
   background: url("../images/left.png") left center/20% no-repeat;
   width: 20%;
   height: 9%;
-  opacity: 0.8;
   @include mq("small-screen-1") {
     width: 45%;
     margin: 5px 0;
@@ -156,7 +166,7 @@ main {
   opacity: 0;
 }
 .show-up.active {
-  animation: moveUp 1s forwards;
+  animation: moveUp 0.5s forwards;
 }
 .show-up.active.delay {
   animation-delay: 0.4s;

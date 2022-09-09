@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Tiro+Tamil&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:wght@400;500;600;700&family=Tiro+Tamil&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Song+Myung&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: url("../images/cursor.png"), pointer;
 }
 
 html {
@@ -10,7 +12,8 @@ html {
 }
 
 body {
-  background: #000;
+  background: #101010;
+  font-family: "Tiro Tamil", serif;
 }
 
 ul {
@@ -31,10 +34,15 @@ a {
     text-align: center;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (max-width: 459px) {
   .container {
     margin: 0 40px;
     padding-left: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .container {
+    margin: 0;
   }
 }
 
@@ -117,16 +125,42 @@ a {
     transform: translateY(0);
   }
 }
+@-webkit-keyframes moveUp2 {
+  0% {
+    opacity: 0.1;
+    transform: translateY(10rem);
+  }
+  80% {
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes moveUp2 {
+  0% {
+    opacity: 0.1;
+    transform: translateY(10rem);
+  }
+  80% {
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 h2 {
-  padding: 1rem 0;
-  font-size: 4.4rem;
+  padding: 1rem 0 4rem;
+  font-size: 4rem;
   text-transform: uppercase;
   font-weight: 800;
-  background: linear-gradient(to left, #5c1b8c, #651d99, #fff);
+  background: linear-gradient(0deg, rgb(92, 27, 140) 0%, rgb(101, 29, 153) 19%, rgb(242, 233, 243) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Tiro Tamil", serif;
+  font-family: "Playfair Display", serif;
 }
 
 h3 {
@@ -140,18 +174,21 @@ h3 {
 dl {
   overflow: hidden;
   line-height: 1.4;
+  font-family: "Playfair Display SC", serif;
 }
 
 dt {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   color: #888;
   font-size: 1.6rem;
+  font-family: "Song Myung", serif;
 }
 
 dd {
-  margin-bottom: 16px;
-  color: #fff;
+  margin-bottom: 1.2rem;
+  color: #f2e9f3;
   font-size: 1.5rem;
+  font-family: "Song Myung", serif;
 }
 
 .u-margin-right-small {
@@ -193,10 +230,17 @@ dd {
     width: 7rem;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (max-width: 459px) {
   .nav-button {
     left: 80%;
     width: 7rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .nav-button {
+    left: 74%;
+    width: 5rem;
+    top: 6rem;
   }
 }
 .nav-bg {
@@ -223,7 +267,7 @@ dd {
     left: 90%;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (max-width: 459px) {
   .nav-bg {
     bottom: 91%;
     left: 80%;
@@ -254,6 +298,11 @@ dd {
   height: 2px;
   background: #333;
   display: inline-block;
+}
+@media screen and (max-width: 360px) {
+  .nav-icon, .nav-icon::before, .nav-icon::after {
+    width: 2rem;
+  }
 }
 .nav-button:hover .nav-icon:before {
   top: -1rem;
@@ -322,21 +371,25 @@ dd {
 }
 .mouse-btn .scroll-bt {
   right: 9rem;
-  top: 80rem;
+  top: 75rem;
   -webkit-animation: motion 0.5s linear 0s infinite alternate;
           animation: motion 0.5s linear 0s infinite alternate;
   cursor: pointer;
   z-index: 9;
   display: inline-block;
-  font-size: 13px;
-  font-weight: bold;
   text-align: center;
-  color: #fff;
-  background: url("../images/mouse_cursor.png") no-repeat center/99%;
+  background: url("../images/mouse_cursor.png") no-repeat center/35%;
+  filter: invert(100%);
   position: fixed;
-  margin-left: -53px;
   padding-bottom: 75px;
   opacity: 0.8;
+}
+.mouse-btn .scroll-bt span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  position: relative;
+  bottom: 18px;
+  font-family: "Tiro Tamil", serif;
 }
 @-webkit-keyframes motion {
   0% {
@@ -370,6 +423,11 @@ header .logo-text {
   -webkit-animation: moveInLeft 1.5s ease-in-out;
           animation: moveInLeft 1.5s ease-in-out;
 }
+@media screen and (max-width: 360px) {
+  header .logo-text {
+    left: 3rem;
+  }
+}
 @media screen and (min-width: 900px) and (max-width: 1200px) {
   header .logo-text img {
     width: 80%;
@@ -380,9 +438,14 @@ header .logo-text {
     width: 70%;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (max-width: 459px) {
   header .logo-text img {
     width: 60%;
+  }
+}
+@media screen and (max-width: 360px) {
+  header .logo-text img {
+    width: 50%;
   }
 }
 header #brandVisual {
@@ -408,17 +471,20 @@ header .visual_slide li {
   background-size: cover;
 }
 header .visual_slide .visual_0 {
-  background-image: url(../images/slide_img1.jpg);
+  background-image: url(../images/slide_img1.jpg), linear-gradient(to right, #5c1b8c 15%, #654ea3 49%);
+  background-blend-mode: hard-light;
   background-position: center;
   background-repeat: no-repeat;
 }
 header .visual_slide .visual_1 {
-  background-image: url(../images/slide_img2.jpg);
+  background-image: url(../images/slide_img2.jpg), linear-gradient(to right, #5c1b8c 15%, #654ea3 49%);
+  background-blend-mode: hard-light;
   background-position: center;
   background-repeat: no-repeat;
 }
 header .visual_slide .visual_2 {
-  background-image: url(../images/slide_img3.jpg);
+  background-image: url(../images/slide_img3.jpg), linear-gradient(to right, #5c1b8c 15%, #654ea3 49%);
+  background-blend-mode: hard-light;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -439,6 +505,11 @@ header .buttonList > li {
   margin: 0 8px;
   cursor: pointer;
 }
+@media screen and (max-width: 360px) {
+  header .buttonList > li {
+    left: 39%;
+  }
+}
 header .buttonList .on {
   background-position: 0 0;
 }
@@ -457,14 +528,15 @@ main::after {
   clear: both;
 }
 main .section-about {
-  background-color: #000;
   padding: 7rem 6.5rem 6rem;
   min-height: 42rem;
   width: 100%;
   float: left;
 }
-main .section-about img {
-  width: 77%;
+@media screen and (max-width: 360px) {
+  main .section-about {
+    padding: 2rem 2.5rem 1rem;
+  }
 }
 @media screen and (min-width: 900px) and (max-width: 1200px) {
   main .section-about img {
@@ -477,7 +549,7 @@ main .section-about img {
     margin: 5rem auto 0;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (max-width: 459px) {
   main .section-about img {
     width: 100%;
     margin: 5rem auto 0;
@@ -510,7 +582,7 @@ main .section-about-words {
     text-align: center;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (max-width: 459px) {
   main .section-about-words {
     float: none;
     display: inline;
@@ -525,19 +597,27 @@ main .section-about-words .about-name {
   line-height: 1;
   color: #fff;
 }
+@media screen and (max-width: 360px) {
+  main .section-about-words .about-name {
+    font-size: 3rem;
+  }
+}
 main .section-about-words span {
   font-size: 1.8rem;
   margin-left: 20px;
 }
 main .section-about-words .about-title {
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 35px;
+  background: linear-gradient(0deg, rgb(92, 27, 140) 0%, rgb(242, 233, 243) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 1.4rem 0;
   font-size: 1.8rem;
+  font-weight: 900;
 }
 
 .more-btn {
-  margin-top: 10rem;
+  margin-top: 2rem;
 }
 .more-btn .txt {
   display: inline-block;
@@ -603,7 +683,7 @@ main .section-about-words .about-title {
     margin: 5px 0;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (max-width: 459px) {
   .swiper-button-next {
     width: 45%;
     margin: 5px 0;
@@ -614,7 +694,6 @@ main .section-about-words .about-title {
   background: url("../images/left.png") left center/20% no-repeat;
   width: 20%;
   height: 9%;
-  opacity: 0.8;
 }
 @media screen and (min-width: 900px) and (max-width: 1200px) {
   .swiper-button-prev {
@@ -628,7 +707,7 @@ main .section-about-words .about-title {
     margin: 5px 0;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (max-width: 459px) {
   .swiper-button-prev {
     width: 45%;
     margin: 5px 0;
@@ -640,8 +719,8 @@ main .section-about-words .about-title {
 }
 
 .show-up.active {
-  -webkit-animation: moveUp 1s forwards;
-          animation: moveUp 1s forwards;
+  -webkit-animation: moveUp 0.5s forwards;
+          animation: moveUp 0.5s forwards;
 }
 
 .show-up.active.delay {
@@ -656,8 +735,7 @@ main .section-about-words .about-title {
 
 footer {
   color: #b9b9b9;
-  background-color: #000;
-  padding: 9rem 7rem 3rem 7rem;
+  padding: 6rem 7rem 3rem 7rem;
 }
 @media screen and (min-width: 900px) and (max-width: 1200px) {
   footer {
@@ -669,7 +747,7 @@ footer {
     padding: 1rem 7rem 3rem 7rem;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (max-width: 459px) {
   footer {
     padding: 1rem 7rem 3rem 7rem;
   }
@@ -682,6 +760,7 @@ footer .sns-list img {
   filter: invert(100%);
   width: 50%;
   opacity: 0.8;
+  cursor: pointer;
 }
 footer .span-hidden {
   display: inline-block;
@@ -705,7 +784,7 @@ footer .logo-text-footer {
     width: 40%;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (max-width: 459px) {
   footer .logo-text-footer {
     width: 50%;
   }
@@ -719,7 +798,7 @@ footer .copyright {
     width: 100%;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (max-width: 459px) {
   footer .copyright {
     width: 100%;
   }
@@ -728,4 +807,5 @@ footer .copyright p {
   margin: 3rem;
   word-break: break-all;
   display: inline-block;
+  font-family: "Nanum Gothic";
 }/*# sourceMappingURL=index.css.map */

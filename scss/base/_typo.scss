@@ -1,18 +1,18 @@
 h2 {
-  padding: 1rem 0;
-  font-size: 4.4rem;
+  padding: 1rem 0 4rem;
+  font-size: 4rem;
   text-transform: uppercase;
   font-weight: 800;
   background: linear-gradient(
-    to left,
-    $color-primary,
-    $color-secondary,
-    $color-white
+    0deg,
+    rgba(92, 27, 140, 1) 0%,
+    rgba(101, 29, 153, 1) 19%,
+    rgba(242, 233, 243, 1) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Tiro Tamil", serif;
+  font-family: "Playfair Display", serif;
 }
 
 h3 {
@@ -26,16 +26,19 @@ h3 {
 dl {
   overflow: hidden;
   line-height: 1.4;
+  font-family: "Playfair Display SC", serif;
 }
 
 dt {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   color: #888;
   font-size: 1.6rem;
+  font-family: "Song Myung", serif;
 }
 
 dd {
-  margin-bottom: 16px;
-  color: #fff;
+  margin-bottom: 1.2rem;
+  color: $color-Purple-2;
   font-size: 1.5rem;
+  font-family: "Song Myung", serif;
 }

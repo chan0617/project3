@@ -1,7 +1,7 @@
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
-    slidesPerGroup: 3,
+    slidesPerGroup:3,
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {
@@ -10,6 +10,10 @@ var swiper = new Swiper(".mySwiper", {
     },
 
     breakpoints: {
+      360:{
+          slidesPerView: 2,
+          spaceBetween: 10,
+      },
         450: {
             slidesPerView: 2,
             spaceBetween: 20,
