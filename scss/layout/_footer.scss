@@ -10,6 +10,9 @@ footer {
   @include mq("small-screen-3") {
     padding: 1rem 7rem 3rem 7rem;
   }
+  @include mq("small-screen-4") {
+    padding: 1rem;
+  }
   .sns-list {
     display: flex;
     width: 100%;
@@ -19,6 +22,10 @@ footer {
     width: 50%;
     opacity: 0.8;
     cursor: pointer;
+    &:hover {
+      filter: invert(12%) sepia(54%) saturate(5769%) hue-rotate(271deg)
+        brightness(87%) contrast(94%);
+    }
   }
   .span-hidden {
     display: inline-block;
@@ -42,7 +49,7 @@ footer {
       width: 50%;
     }
     @include mq("small-screen-4") {
-      // width: 90%;
+      width: 90%;
     }
   }
   .copyright {

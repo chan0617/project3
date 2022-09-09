@@ -6,7 +6,7 @@
   }
 }
 
-//화면분기만  small-screen-1
+//화면분기
 @mixin mq($screen-width) {
   @if $screen-width == "small-screen-1" {
     @media screen and (min-width: 900px) and (max-width: 1200px) {
@@ -17,11 +17,10 @@
       @content;
     }
   } @else if $screen-width == "small-screen-3" {
-    @media screen and (max-width: 700px) and (max-width: 459px) {
+    @media screen and (min-width: 459px) and (max-width: 700px) {
       @content;
     }
-  }
-  @else if $screen-width == "small-screen-4" {
+  } @else if $screen-width == "small-screen-4" {
     @media screen and (max-width: 360px) {
       @content;
     }

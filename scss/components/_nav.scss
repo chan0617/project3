@@ -170,12 +170,32 @@
     position: fixed;
     padding-bottom: 75px;
     opacity: 0.8;
+    font-size: 1.8rem;
+    @include mq("small-screen-1") {
+      top: 62rem;
+    }
+    @include mq("small-screen-2") {
+      right: 6rem;
+      top: 60rem;
+    }
+    @include mq("small-screen-3") {
+      right: 9rem;
+      top: 55rem;
+    }
+    @include mq("small-screen-4") {
+      right: 4rem;
+      top: 59rem;
+      width: 13%;
+    }
     span {
       font-size: 1.4rem;
       font-weight: bold;
       position: relative;
       bottom: 18px;
       font-family: "Tiro Tamil", serif;
+      @include mq("small-screen-4") {
+        font-size: 1.2rem;
+      }
     }
     @keyframes motion {
       0% {
