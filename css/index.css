@@ -125,32 +125,6 @@ a {
     transform: translateY(0);
   }
 }
-@-webkit-keyframes moveUp2 {
-  0% {
-    opacity: 0.1;
-    transform: translateY(10rem);
-  }
-  80% {
-    transform: translateY(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes moveUp2 {
-  0% {
-    opacity: 0.1;
-    transform: translateY(10rem);
-  }
-  80% {
-    transform: translateY(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 h2 {
   padding: 1rem 0 4rem;
   font-size: 4rem;
@@ -836,6 +810,11 @@ main .section-about-words .about-title {
 .show-up.active.delay-more {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
+}
+
+.show-up2.active.delay-longmore {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 footer {

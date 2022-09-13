@@ -39,17 +39,3 @@
     transform: translateY(0);
   }
 }
-// 22만들기
-@keyframes moveUp2 {
-  0% {
-    opacity: 0.1;
-    transform: translateY(10rem);
-  }
-  80% {
-    transform: translateY(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
