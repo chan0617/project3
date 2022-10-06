@@ -1,17 +1,16 @@
 {
-    "liveSassCompile.settings.formats":[
+  "liveSassCompile.settings.formats": [
     // This is Default. 사용자 정의
     {
-        "format": "expanded",
-        "extensionName": ".css",
-        "savePath": "~/../css"
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../css"
     },
     {
-        "format": "compressed",
-        "extensionName": ".min.css",
-        "savePath": "~/../dist/css"
-    },
-],
-"liveServer.settings.port": 5501
-
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "~/../dist/css"
+    }
+  ],
+  "liveServer.settings.port": 5502
 }
